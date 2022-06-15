@@ -9,7 +9,7 @@ Keyframe animation timeline for HTML.
 
 <timeline repeatCount="2" end="300">
     <timeline-track object="#example" target=".shape">
-      
+
       <keyframe pos="0">
         <keyframe-value type="css" name="display" value="block"></keyframe-value>
       </keyframe>
@@ -28,25 +28,25 @@ Keyframe animation timeline for HTML.
 
 # References
 
-## <timeline> tag
+## &lt;timeline&gt; tag
 | Attribute   | Description                           | Values             | Default    |
 | ----------- | ------------------------------------- | ------------------ | ---------- |
 | repeatCount | How many times the timeline will loop | indefinite, Number | indefinite |
 | length      | Length of the timeline                | Number             | -          |
 | state       | State of the timeline                 | playing, stopped   | -          |
 
-## <timeline-track> tag
+## &lt;timeline-track&gt; tag
 | Attribute | Description         | Values   | Default |
 | --------- | ------------------- | -------- | ------- |
 | object    | Targeted object tag | Selector | -       |
 | target    | Targeted element    | Selector | -       |
 
-## <keyframe> tag
+## &lt;keyframe&gt; tag
 | Attribute | Description                              | Values | Default |
 | --------- | ---------------------------------------- | ------ | ------- |
 | pos       | Position of the keyframe on the timeline | Number | -       |
 
-## <keyframe-value> tag
+## &lt;keyframe-value>&gt; tag
 | Attribute | Description                 | Values         | Default   |
 | --------- | --------------------------- | -------------- | --------- |
 | type      | Type of the affected value  | css, attribute | attribute |
