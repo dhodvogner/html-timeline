@@ -33,8 +33,9 @@ Keyframe animation timeline for HTML.
 ## <timeline> tag
 | Attribute   | Description                           | Values             | Default    |
 | ----------- | ------------------------------------- | ------------------ | ---------- |
-| repeatCount | How many times the timeline will loop | indefinite, number | indefinite |
-| end         | length of the timeline                | Number             | -          |
+| repeatCount | How many times the timeline will loop | indefinite, Number | indefinite |
+| length      | Length of the timeline                | Number             | -          |
+| state       | State of the timeline                 | playing, stopped   | -          |
 
 ## <timeline-track> tag
 | Attribute | Description         | Values   | Default |

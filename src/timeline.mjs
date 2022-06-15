@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set timelines to 0
   timelines.forEach((timeline) => {
-    timeline.setAttribute('current', 0);
+    timeline.current = 0;
+    timeline.repeat = 0;
+    timeline.setAttribute('state', 'playing');
   });
 
   // Interval 
@@ -11,13 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const timelines = document.querySelectorAll('timeline');
 
     timelines.forEach((timeline) => {
-      const currentFrame = Number(timeline.getAttribute('current'));
-      const endFrame = Number(timeline.getAttribute('end'));
+      const repeatCount = (timeline.hasAttribute('repeatCount')) ? timeline.getAttribute('repeatCount') : 'indefinite';
+
+      if(repeatCount !== "indefinite" && timeline.repeat > Number(repeatCount) - 1) {
+        return // Skip ended timelines;
+      }
+
+      const currentFrame = Number(timeline.current);
+      const endFrame = Number(timeline.getAttribute('length'));
 
       const keys = timeline.querySelectorAll(`keyframe[pos="${currentFrame}"]`);
 
       keys.forEach((key) => {
         const track = key.parentElement;
+
+        if (track.hasAttribute('disabled'))
+          return // Skip disabled tracks
+
         const targetSelector = track.getAttribute('target');
 
         let documentElement = document;
@@ -41,10 +53,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
-      if (currentFrame + 1 > endFrame)
-        timeline.setAttribute('current', 0);
-      else
-        timeline.setAttribute('current', currentFrame + 1);
+      timeline.current = (currentFrame + 1 > endFrame) ? 0 : currentFrame + 1;
+
+      if((currentFrame + 1 > endFrame)) {
+        timeline.repeat += 1;
+      };
+
+      if(repeatCount !== "indefinite" && timeline.repeat === Number(repeatCount) - 1) {
+        timeline.setAttribute('state', 'stopped');
+      }
+
     });
   }, 1)
 });
