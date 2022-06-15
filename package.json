@@ -1,0 +1,14 @@
+{
+  "name": "html-timeline",
+  "version": "1.0.0",
+  "description": "Keyframe animation timeline for HTML",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server ./ -c-1"
+  },
+  "author": "Daniel Hodvogner <dhodvogner@gmail.com>",
+  "license": "GPLv3",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

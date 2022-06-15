@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="none" viewBox="0 0 512 512">
+  <g class="Blinking Computer">
+    <g class="figure">
+      <g class="body">
+        <rect width="246" height="48" x="133" y="385" fill="#DFD7C4" class="body-shape-2" rx="10"/>
+        <g class="body-shape-1" filter="url(#a)">
+          <rect width="256" height="330" x="128" y="79" fill="#DFD7C4" rx="20"/>
+        </g>
+      </g>
+      <g class="misc">
+        <rect width="34" height="12" x="147" y="325" fill="#D2492B" class="power-led-red" rx="4"/>
+        <rect width="34" height="12" x="147" y="325" fill="#61D22B" class="power-led-green" rx="4"/>
+        <g class="floppy-slot">
+          <path fill="#575757" d="M224 328a3 3 0 0 1 3-3h136a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H227a3 3 0 0 1-3-3v-6Z"/>
+          <path fill="#575757" d="M322 323a3 3 0 0 1 3-3h38a3 3 0 0 1 3 3v16a3 3 0 0 1-3 3h-38a3 3 0 0 1-3-3v-16Z"/>
+        </g>
+      </g>
+      <g class="screen">
+        <g class="screen-outer" filter="url(#b)">
+          <rect width="230" height="180" x="141" y="106" fill="#575757" rx="10"/>
+        </g>
+        <g class="screen-inner" filter="url(#c)">
+          <rect width="208" height="162" x="152" y="115" fill="#9B9B65" rx="5"/>
+        </g>
+      </g>
+      <g class="face">
+        <g class="face-normal">
+          <g class="Eye L">
+            <path fill="#32430E" d="M189 178h19v4h-19z" class="Rectangle 9"/>
+            <path fill="#32430E" d="M189 202h19v4h-19z" class="Rectangle 11"/>
+            <path fill="#32430E" d="M184 182h28v20h-28z" class="Rectangle 8"/>
+          </g>
+          <g class="Eye R">
+            <path fill="#32430E" d="M304 178h19v4h-19z" class="Rectangle 9"/>
+            <path fill="#32430E" d="M304 202h19v4h-19z" class="Rectangle 11"/>
+            <path fill="#32430E" d="M299 182h28v20h-28z" class="Rectangle 8"/>
+          </g>
+          <g class="Mouth">
+            <path fill="#32430E" d="M244 210h25v9h-25z" class="Rectangle 12"/>
+            <path fill="#32430E" d="M237 205h11v9h-11z" class="Rectangle 13"/>
+            <path fill="#32430E" d="M264 205h11v9h-11z" class="Rectangle 14"/>
+          </g>
+        </g>
+        <g class="face-blink">
+          <g class="Eye L">
+            <path fill="#32430E" d="M189 195h19v4h-19z" class="Rectangle 11"/>
+            <path fill="#32430E" d="M184 192h28v3h-28z" class="Rectangle 8"/>
+          </g>
+          <g class="Eye R">
+            <path fill="#32430E" d="M304 195h19v4h-19z" class="Rectangle 11"/>
+            <path fill="#32430E" d="M299 192h28v4h-28z" class="Rectangle 8"/>
+          </g>
+          <g class="Mouth">
+            <path fill="#32430E" d="M244 210h25v9h-25z" class="Rectangle 12"/>
+            <path fill="#32430E" d="M237 205h11v9h-11z" class="Rectangle 13"/>
+            <path fill="#32430E" d="M264 205h11v9h-11z" class="Rectangle 14"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <filter id="a" width="264" height="338" x="124" y="79" class="a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_15_1311"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_15_1311" result="shape"/>
+    </filter>
+    <filter id="b" width="250" height="200" x="131" y="96" class="b" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_15_1311"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_15_1311" result="shape"/>
+    </filter>
+    <filter id="c" width="208" height="162" x="152" y="115" class="c" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in2="shape" result="effect1_innerShadow_15_1311"/>
+    </filter>
+  </defs>
+</svg>
