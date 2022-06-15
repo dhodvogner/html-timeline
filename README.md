@@ -7,9 +7,9 @@ Keyframe animation timeline for HTML.
 ```html
 <object id="example" type="image/svg+xml" data="some.svg"></object>
 
-<timeline repeatCount="repeatCount" end="300">
+<timeline repeatCount="2" end="300">
     <timeline-track object="#example" target=".shape">
-
+      
       <keyframe pos="0">
         <keyframe-value type="css" name="display" value="block"></keyframe-value>
       </keyframe>
@@ -21,8 +21,6 @@ Keyframe animation timeline for HTML.
       <keyframe pos="300">
         <keyframe-value type="css" name="display" value="block"></keyframe-value>
       </keyframe>
-
-    </timeline-track>
 
     </timeline-track>
   </timeline>
